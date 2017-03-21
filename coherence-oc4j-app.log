@@ -1,0 +1,511 @@
+17/03/21 11:44:33.500 12.2.1.0.0 Started
+17/03/21 11:44:42.93 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 11:44:44.515 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:190)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:143)
+	at com.sun.faces.application.ApplicationImpl.createComponent(ApplicationImpl.java:406)
+	at javax.faces.webapp.UIComponentTag.createComponent(UIComponentTag.java:1019)
+	at javax.faces.webapp.UIComponentTag.createChild(UIComponentTag.java:1046)
+	at javax.faces.webapp.UIComponentTag.findComponent(UIComponentTag.java:761)
+	at javax.faces.webapp.UIComponentTag.doStartTag(UIComponentTag.java:451)
+	at oracle.adf.view.faces.webapp.UIXComponentTag.doStartTag(UIXComponentTag.java:85)
+	at _employees_jspx._jspService(_employees_jspx.java:56)
+	at com.orionserver[Oracle Containers for J2EE 10g (12.2.1.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:59)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:462)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:594)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:518)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:713)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:287)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:51)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:193)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:198)
+	at com.sun.faces.context.ExternalContextImpl.dispatch(ExternalContextImpl.java:346)
+	at com.sun.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:152)
+	at oracle.adfinternal.view.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:157)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:107)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:137)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:214)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:298)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:316)
+	at com.sun.faces.el.VariableResolverImpl.resolveVariable(VariableResolverImpl.java:97)
+	at oracle.adfinternal.view.faces.el.AdfFacesVariableResolver.resolveVariable(AdfFacesVariableResolver.java:40)
+	at com.sun.faces.el.impl.NamedValue.evaluate(NamedValue.java:145)
+	at com.sun.faces.el.impl.ComplexValue.evaluate(ComplexValue.java:166)
+	at com.sun.faces.el.impl.ExpressionEvaluatorImpl.evaluate(ExpressionEvaluatorImpl.java:263)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:160)
+	... 45 more
+Caused by: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:229)
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:306)
+	... 51 more
+Caused by: java.lang.ClassNotFoundException: class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at java.beans.Beans.instantiate(Beans.java:208)
+	at java.beans.Beans.instantiate(Beans.java:48)
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:223)
+	... 52 more
+Caused by: java.lang.ClassCastException: [Ljava.lang.Object;
+	at nl.ordina.coherence.backing.EmployeesBean.<init>(EmployeesBean.java:88)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:494)
+	at java.lang.Class.newInstance0(Class.java:350)
+	at java.lang.Class.newInstance(Class.java:303)
+	at java.beans.Beans.instantiate(Beans.java:204)
+	... 54 more
+17/03/21 11:44:44.546 coherence-web-webapp: De externe host heeft een verbinding verbroken
+17/03/21 11:46:14.796 12.2.1.0.0 Started
+17/03/21 11:46:26.0 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 11:49:11.234 12.2.1.0.0 Started
+17/03/21 11:49:17.765 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 11:49:20.78 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:190)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:143)
+	at com.sun.faces.application.ApplicationImpl.createComponent(ApplicationImpl.java:406)
+	at javax.faces.webapp.UIComponentTag.createComponent(UIComponentTag.java:1019)
+	at javax.faces.webapp.UIComponentTag.createChild(UIComponentTag.java:1046)
+	at javax.faces.webapp.UIComponentTag.findComponent(UIComponentTag.java:761)
+	at javax.faces.webapp.UIComponentTag.doStartTag(UIComponentTag.java:451)
+	at oracle.adf.view.faces.webapp.UIXComponentTag.doStartTag(UIXComponentTag.java:85)
+	at _employees_jspx._jspService(_employees_jspx.java:56)
+	at com.orionserver[Oracle Containers for J2EE 10g (12.2.1.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:59)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:462)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:594)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:518)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:713)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:287)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:51)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:193)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:198)
+	at com.sun.faces.context.ExternalContextImpl.dispatch(ExternalContextImpl.java:346)
+	at com.sun.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:152)
+	at oracle.adfinternal.view.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:157)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:107)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:137)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:214)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:298)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:316)
+	at com.sun.faces.el.VariableResolverImpl.resolveVariable(VariableResolverImpl.java:97)
+	at oracle.adfinternal.view.faces.el.AdfFacesVariableResolver.resolveVariable(AdfFacesVariableResolver.java:40)
+	at com.sun.faces.el.impl.NamedValue.evaluate(NamedValue.java:145)
+	at com.sun.faces.el.impl.ComplexValue.evaluate(ComplexValue.java:166)
+	at com.sun.faces.el.impl.ExpressionEvaluatorImpl.evaluate(ExpressionEvaluatorImpl.java:263)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:160)
+	... 45 more
+Caused by: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:229)
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:306)
+	... 51 more
+Caused by: java.lang.ClassNotFoundException: class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at java.beans.Beans.instantiate(Beans.java:208)
+	at java.beans.Beans.instantiate(Beans.java:48)
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:223)
+	... 52 more
+Caused by: java.lang.ClassCastException: [Ljava.lang.Object;
+	at nl.ordina.coherence.backing.EmployeesBean.<init>(EmployeesBean.java:88)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:494)
+	at java.lang.Class.newInstance0(Class.java:350)
+	at java.lang.Class.newInstance(Class.java:303)
+	at java.beans.Beans.instantiate(Beans.java:204)
+	... 54 more
+17/03/21 11:50:33.125 12.2.1.0.0 Started
+17/03/21 11:50:44.343 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 11:53:24.93 12.2.1.0.0 Started
+17/03/21 11:53:30.734 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 11:53:33.62 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:190)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:143)
+	at com.sun.faces.application.ApplicationImpl.createComponent(ApplicationImpl.java:406)
+	at javax.faces.webapp.UIComponentTag.createComponent(UIComponentTag.java:1019)
+	at javax.faces.webapp.UIComponentTag.createChild(UIComponentTag.java:1046)
+	at javax.faces.webapp.UIComponentTag.findComponent(UIComponentTag.java:761)
+	at javax.faces.webapp.UIComponentTag.doStartTag(UIComponentTag.java:451)
+	at oracle.adf.view.faces.webapp.UIXComponentTag.doStartTag(UIXComponentTag.java:85)
+	at _employees_jspx._jspService(_employees_jspx.java:56)
+	at com.orionserver[Oracle Containers for J2EE 10g (12.2.1.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:59)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:462)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:594)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:518)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:713)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:287)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:51)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:193)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:198)
+	at com.sun.faces.context.ExternalContextImpl.dispatch(ExternalContextImpl.java:346)
+	at com.sun.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:152)
+	at oracle.adfinternal.view.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:157)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:107)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:137)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:214)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:298)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:316)
+	at com.sun.faces.el.VariableResolverImpl.resolveVariable(VariableResolverImpl.java:97)
+	at oracle.adfinternal.view.faces.el.AdfFacesVariableResolver.resolveVariable(AdfFacesVariableResolver.java:40)
+	at com.sun.faces.el.impl.NamedValue.evaluate(NamedValue.java:145)
+	at com.sun.faces.el.impl.ComplexValue.evaluate(ComplexValue.java:166)
+	at com.sun.faces.el.impl.ExpressionEvaluatorImpl.evaluate(ExpressionEvaluatorImpl.java:263)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:160)
+	... 45 more
+Caused by: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:229)
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:306)
+	... 51 more
+Caused by: java.lang.ClassNotFoundException: class nl.ordina.coherence.backing.EmployeesBean : java.lang.ClassCastException: [Ljava.lang.Object;
+	at java.beans.Beans.instantiate(Beans.java:208)
+	at java.beans.Beans.instantiate(Beans.java:48)
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:223)
+	... 52 more
+Caused by: java.lang.ClassCastException: [Ljava.lang.Object;
+	at nl.ordina.coherence.backing.EmployeesBean.<init>(EmployeesBean.java:88)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:494)
+	at java.lang.Class.newInstance0(Class.java:350)
+	at java.lang.Class.newInstance(Class.java:303)
+	at java.beans.Beans.instantiate(Beans.java:204)
+	... 54 more
+17/03/21 11:54:15.312 12.2.1.0.0 Started
+17/03/21 11:54:26.546 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 12:51:40.234 12.2.1.0.0 Started
+17/03/21 12:51:51.562 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 12:54:16.515 12.2.1.0.0 Started
+17/03/21 12:54:27.796 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 12:56:25.765 12.2.1.0.0 Started
+17/03/21 12:56:37.500 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 12:56:45.671 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.RuntimeException: Storage is not configured
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:190)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:143)
+	at com.sun.faces.application.ApplicationImpl.createComponent(ApplicationImpl.java:406)
+	at javax.faces.webapp.UIComponentTag.createComponent(UIComponentTag.java:1019)
+	at javax.faces.webapp.UIComponentTag.createChild(UIComponentTag.java:1046)
+	at javax.faces.webapp.UIComponentTag.findComponent(UIComponentTag.java:761)
+	at javax.faces.webapp.UIComponentTag.doStartTag(UIComponentTag.java:451)
+	at oracle.adf.view.faces.webapp.UIXComponentTag.doStartTag(UIXComponentTag.java:85)
+	at _employees_jspx._jspService(_employees_jspx.java:56)
+	at com.orionserver[Oracle Containers for J2EE 10g (12.2.1.0.0) ].http.OrionHttpJspPage.service(OrionHttpJspPage.java:59)
+	at oracle.jsp.runtimev2.JspPageTable.service(JspPageTable.java:462)
+	at oracle.jsp.runtimev2.JspServlet.internalService(JspServlet.java:594)
+	at oracle.jsp.runtimev2.JspServlet.service(JspServlet.java:518)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:856)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:713)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.unprivileged_forward(ServletRequestDispatcher.java:287)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.access$100(ServletRequestDispatcher.java:51)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher$2.oc4jRun(ServletRequestDispatcher.java:193)
+	at oracle.oc4j.security.OC4JSecurity.doPrivileged(OC4JSecurity.java:283)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forward(ServletRequestDispatcher.java:198)
+	at com.sun.faces.context.ExternalContextImpl.dispatch(ExternalContextImpl.java:346)
+	at com.sun.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:152)
+	at oracle.adfinternal.view.faces.application.ViewHandlerImpl.renderView(ViewHandlerImpl.java:157)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:107)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:137)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:214)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:298)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: javax.faces.FacesException: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.RuntimeException: Storage is not configured
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:316)
+	at com.sun.faces.el.VariableResolverImpl.resolveVariable(VariableResolverImpl.java:97)
+	at oracle.adfinternal.view.faces.el.AdfFacesVariableResolver.resolveVariable(AdfFacesVariableResolver.java:40)
+	at com.sun.faces.el.impl.NamedValue.evaluate(NamedValue.java:145)
+	at com.sun.faces.el.impl.ComplexValue.evaluate(ComplexValue.java:166)
+	at com.sun.faces.el.impl.ExpressionEvaluatorImpl.evaluate(ExpressionEvaluatorImpl.java:263)
+	at com.sun.faces.el.ValueBindingImpl.getValue(ValueBindingImpl.java:160)
+	... 45 more
+Caused by: javax.faces.FacesException: Can't instantiate class: 'nl.ordina.coherence.backing.EmployeesBean'.. class nl.ordina.coherence.backing.EmployeesBean : java.lang.RuntimeException: Storage is not configured
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:229)
+	at com.sun.faces.application.ApplicationAssociate.createAndMaybeStoreManagedBeans(ApplicationAssociate.java:306)
+	... 51 more
+Caused by: java.lang.ClassNotFoundException: class nl.ordina.coherence.backing.EmployeesBean : java.lang.RuntimeException: Storage is not configured
+	at java.beans.Beans.instantiate(Beans.java:208)
+	at java.beans.Beans.instantiate(Beans.java:48)
+	at com.sun.faces.config.ManagedBeanFactory.newInstance(ManagedBeanFactory.java:223)
+	... 52 more
+Caused by: java.lang.RuntimeException: Storage is not configured
+	at com.tangosol.coherence.component.util.daemon.queueProcessor.service.DistributedCache$BinaryMap.onMissingStorage(DistributedCache.CDB:9)
+	at com.tangosol.coherence.component.util.daemon.queueProcessor.service.DistributedCache$BinaryMap.sendPartitionedRequest(DistributedCache.CDB:32)
+	at com.tangosol.coherence.component.util.daemon.queueProcessor.service.DistributedCache$BinaryMap.size(DistributedCache.CDB:13)
+	at com.tangosol.coherence.component.util.daemon.queueProcessor.service.DistributedCache$BinaryMap$EntrySet.size(DistributedCache.CDB:1)
+	at com.tangosol.util.ConverterCollections$ConverterEntrySet.size(ConverterCollections.java:2011)
+	at nl.ordina.coherence.backing.EmployeesBean.<init>(EmployeesBean.java:84)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:494)
+	at java.lang.Class.newInstance0(Class.java:350)
+	at java.lang.Class.newInstance(Class.java:303)
+	at java.beans.Beans.instantiate(Beans.java:204)
+	... 54 more
+17/03/21 12:58:45.421 12.2.1.0.0 Started
+17/03/21 12:58:57.437 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 13:09:07.109 12.2.1.0.0 Started
+17/03/21 13:09:18.656 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:02:18.625 12.2.1.0.0 Started
+17/03/21 16:02:30.203 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:05:07.703 12.2.1.0.0 Started
+17/03/21 16:05:14.265 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:29:06.515 12.2.1.0.0 Started
+17/03/21 16:29:13.93 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:36:02.953 12.2.1.0.0 Started
+17/03/21 16:36:09.562 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:36:58.140 12.2.1.0.0 Started
+17/03/21 16:37:04.562 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:39:17.671 12.2.1.0.0 Started
+17/03/21 16:39:24.359 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:41:50.203 12.2.1.0.0 Started
+17/03/21 16:41:56.765 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:48:53.906 12.2.1.0.0 Started
+17/03/21 16:49:00.531 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:55:39.359 12.2.1.0.0 Started
+17/03/21 16:55:45.921 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 16:59:38.921 12.2.1.0.0 Started
+17/03/21 16:59:45.500 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:01:48.78 12.2.1.0.0 Started
+17/03/21 17:01:54.781 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:06:59.156 12.2.1.0.0 Started
+17/03/21 17:07:05.859 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:08:32.140 12.2.1.0.0 Started
+17/03/21 17:08:38.812 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:11:26.640 12.2.1.0.0 Started
+17/03/21 17:11:35.140 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:18:20.671 12.2.1.0.0 Started
+17/03/21 17:18:27.343 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:28:53.390 12.2.1.0.0 Started
+17/03/21 17:28:59.984 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:39:38.593 12.2.1.0.0 Started
+17/03/21 17:39:45.296 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:46:30.171 12.2.1.0.0 Started
+17/03/21 17:46:36.843 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:53:00.390 12.2.1.0.0 Started
+17/03/21 17:53:07.31 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:55:43.734 12.2.1.0.0 Started
+17/03/21 17:55:50.343 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 17:56:32.109 12.2.1.0.0 Started
+17/03/21 17:56:38.671 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:01:22.453 12.2.1.0.0 Started
+17/03/21 18:01:29.187 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:02:24.156 12.2.1.0.0 Started
+17/03/21 18:02:30.968 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:03:59.296 12.2.1.0.0 Started
+17/03/21 18:04:05.890 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:04:45.234 12.2.1.0.0 Started
+17/03/21 18:04:51.781 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:05:27.468 12.2.1.0.0 Started
+17/03/21 18:05:34.46 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:36:04.515 12.2.1.0.0 Started
+17/03/21 18:36:11.234 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:39:44.640 12.2.1.0.0 Started
+17/03/21 18:39:51.328 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:47:50.562 12.2.1.0.0 Started
+17/03/21 18:47:57.187 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 18:58:26.140 12.2.1.0.0 Started
+17/03/21 18:58:32.796 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 19:06:28.187 12.2.1.0.0 Started
+17/03/21 19:06:39.593 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 19:07:22.875 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: java.lang.NullPointerException
+	at com.sun.faces.el.MethodBindingImpl.invoke(MethodBindingImpl.java:150)
+	at oracle.adf.view.faces.component.UIXComponentBase.__broadcast(UIXComponentBase.java:1087)
+	at oracle.adf.view.faces.component.UIXCommand.broadcast(UIXCommand.java:204)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:287)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:401)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:95)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:110)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:213)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: java.lang.NullPointerException
+	at nl.ordina.coherence.backing.EmployeesBean.search(EmployeesBean.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.sun.faces.el.MethodBindingImpl.invoke(MethodBindingImpl.java:146)
+	... 26 more
+17/03/21 19:11:13.500 12.2.1.0.0 Started
+17/03/21 19:11:20.140 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 19:12:04.171 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: java.lang.NullPointerException
+	at com.sun.faces.el.MethodBindingImpl.invoke(MethodBindingImpl.java:150)
+	at oracle.adf.view.faces.component.UIXComponentBase.__broadcast(UIXComponentBase.java:1087)
+	at oracle.adf.view.faces.component.UIXCommand.broadcast(UIXCommand.java:204)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:287)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:401)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:95)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:110)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:213)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: java.lang.NullPointerException
+	at nl.ordina.coherence.backing.EmployeesBean.search(EmployeesBean.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.sun.faces.el.MethodBindingImpl.invoke(MethodBindingImpl.java:146)
+	... 26 more
+17/03/21 19:17:24.93 12.2.1.0.0 Started
+17/03/21 19:17:30.796 coherence-web-webapp: 12.2.1.0.0 Started
+17/03/21 19:18:05.250 coherence-web-webapp: Servlet error
+javax.faces.el.EvaluationException: java.lang.NullPointerException
+	at com.sun.faces.el.MethodBindingImpl.invoke(MethodBindingImpl.java:150)
+	at oracle.adf.view.faces.component.UIXComponentBase.__broadcast(UIXComponentBase.java:1087)
+	at oracle.adf.view.faces.component.UIXCommand.broadcast(UIXCommand.java:204)
+	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:287)
+	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:401)
+	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:95)
+	at com.sun.faces.lifecycle.LifecycleImpl.phase(LifecycleImpl.java:245)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:110)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:213)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ResourceFilterChain.doFilter(ResourceFilterChain.java:65)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._invokeDoFilter(AdfFacesFilterImpl.java:228)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl._doFilterImpl(AdfFacesFilterImpl.java:197)
+	at oracle.adfinternal.view.faces.webapp.AdfFacesFilterImpl.doFilter(AdfFacesFilterImpl.java:123)
+	at oracle.adf.view.faces.webapp.AdfFacesFilter.doFilter(AdfFacesFilter.java:103)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.invoke(ServletRequestDispatcher.java:623)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.ServletRequestDispatcher.forwardInternal(ServletRequestDispatcher.java:370)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.doProcessRequest(HttpRequestHandler.java:871)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.processRequest(HttpRequestHandler.java:453)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.serveOneRequest(HttpRequestHandler.java:221)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:122)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].server.http.HttpRequestHandler.run(HttpRequestHandler.java:111)
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run(ServerSocketReadHandler.java:260)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket(ServerSocketAcceptHandler.java:239)
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700(ServerSocketAcceptHandler.java:34)
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run(ServerSocketAcceptHandler.java:880)
+	at com.evermind[Oracle Containers for J2EE 10g (12.2.1.0.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run(ReleasableResourcePooledExecutor.java:303)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: java.lang.NullPointerException
+	at nl.ordina.coherence.backing.EmployeesBean.search(EmployeesBean.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at com.sun.faces.el.MethodBindingImpl.invoke(MethodBindingImpl.java:146)
+	... 26 more
+17/03/21 19:22:36.968 12.2.1.0.0 Started
+17/03/21 19:22:43.578 coherence-web-webapp: 12.2.1.0.0 Started

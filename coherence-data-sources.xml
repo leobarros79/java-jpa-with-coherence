@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-MailAgent">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="mhs" password="->DataBase_User_Lija3-xzLcIMrxsxlJYkQWLqDk7N9Any" url="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-MailAgent" jndi-name="jdbc/MailAgentDS" connection-pool-name="jdev-connection-pool-MailAgent"/>
+    <native-data-source name="jdev-connection-native-MailAgent" jndi-name="jdbc/MailAgentCoreDS" url="jdbc:oracle:thin:@localhost:1521:ORCL" user="mhs" password="->DataBase_User__1op6WvDeXfRtOqvtt21ZvMEXEfbqB0F" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-EdineParser">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="parser" password="->DataBase_User_mHmXfXDXz4Yycr7KFmV_rdbHLaV_mBd4" url="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-EdineParser" jndi-name="jdbc/EdineParserDS" connection-pool-name="jdev-connection-pool-EdineParser"/>
+    <native-data-source name="jdev-connection-native-EdineParser" jndi-name="jdbc/EdineParserCoreDS" url="jdbc:oracle:thin:@localhost:1521:ORCL" user="parser" password="->DataBase_User_vx-wPVuk-0Mdo0F-Ow2iSc7TgqB4IhIz" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-openjmsMySQL">
+        <connection-factory factory-class="com.mysql.jdbc.Driver" user="root" password="->DataBase_User_qXBixMuh7w71h1Qqon0rQIvstmJ1iRym" url="jdbc:mysql://localhost/jms"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-openjmsMySQL" jndi-name="jdbc/openjmsMySQLDS" connection-pool-name="jdev-connection-pool-openjmsMySQL"/>
+    <connection-pool name="jdev-connection-pool-hr">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="hr" password="->DataBase_User_RVbYeBuUGMWEGhca_0OaVOXZnmOGRXLY" url="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-hr" jndi-name="jdbc/hrDS" connection-pool-name="jdev-connection-pool-hr"/>
+    <native-data-source name="jdev-connection-native-hr" jndi-name="jdbc/hrCoreDS" url="jdbc:oracle:thin:@localhost:1521:ORCL" user="hr" password="->DataBase_User_WiLeYTZG8LH4D423A8Y_JHtDNGwnTkhu" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-tennet">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="tennet" password="->DataBase_User_ibuDV4c603A5SVEid1VxKDeRue9SEo8j" url="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-tennet" jndi-name="jdbc/tennetDS" connection-pool-name="jdev-connection-pool-tennet"/>
+    <native-data-source name="jdev-connection-native-tennet" jndi-name="jdbc/tennetCoreDS" url="jdbc:oracle:thin:@localhost:1521:ORCL" user="tennet" password="->DataBase_User_M8i5aOssYHI97G-OECHF8sAJNJ2EAYyM" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-ScottConnection">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="scott" password="->DataBase_User_dLCFbP7qT5ZT0k5CBB31wXwtX4BEs2pH" url="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-ScottConnection" jndi-name="jdbc/ScottConnectionDS" connection-pool-name="jdev-connection-pool-ScottConnection"/>
+    <native-data-source name="jdev-connection-native-ScottConnection" jndi-name="jdbc/ScottConnectionCoreDS" url="jdbc:oracle:thin:@localhost:1521:ORCL" user="scott" password="->DataBase_User_pz4iUA94tUuTF_aP57n7raLhvCtEecBL" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-EdineParserMySQL">
+        <connection-factory factory-class="com.mysql.jdbc.Driver" user="root" password="->DataBase_User_xw9aNs6zL3gMubK_O1h5K2yuTp5EYu2t" url="jdbc:mysql://localhost/mhs"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-EdineParserMySQL" jndi-name="jdbc/EdineParserMySQLDS" connection-pool-name="jdev-connection-pool-EdineParserMySQL"/>
+    <connection-pool name="jdev-connection-pool-MailAgentMySQL">
+        <connection-factory factory-class="com.mysql.jdbc.Driver" user="root" password="->DataBase_User_MKo6ftshGiMhGx2rdmjBj1VmNkoaw-47" url="jdbc:mysql://localhost/mhs"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-MailAgentMySQL" jndi-name="jdbc/MailAgentMySQLDS" connection-pool-name="jdev-connection-pool-MailAgentMySQL"/>
+    <connection-pool name="jdev-connection-pool-CDDConnection">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="cdd" password="->DataBase_User_-quY3r4l7lrIlDuRawN_yp3QCZ-fhkgN" url="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-CDDConnection" jndi-name="jdbc/CDDConnectionDS" connection-pool-name="jdev-connection-pool-CDDConnection"/>
+    <native-data-source name="jdev-connection-native-CDDConnection" jndi-name="jdbc/CDDConnectionCoreDS" url="jdbc:oracle:thin:@localhost:1521:ORCL" user="cdd" password="->DataBase_User_wMWfmaTG9wkX1uw3aHT5bNW-hTh8q5sd" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces"
+          xmlns:afh="http://xmlns.oracle.com/adf/faces/html"
+          xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable">
+  <jsp:output omit-xml-declaration="true" doctype-root-element="HTML"
+              doctype-system="http://www.w3.org/TR/html4/loose.dtd"
+              doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"/>
+  <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+  <f:view>
+    <afh:html id="html">
+      <afh:head title="employees" id="head">
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=windows-1252"/>
+      </afh:head>
+      <afh:body id="body">
+        <h:form binding="#{backing_employees.form}" id="form">
+          <af:messages binding="#{backing_employees.messages}" id="messages"/>
+          <af:inputText label="First name"
+                        binding="#{backing_employees.firstName}"
+                        id="FirstName"/>
+          <af:inputText label="Last name"
+                        binding="#{backing_employees.lastName}"
+                        id="LastName"/>
+          <af:commandButton text="Load cache"
+                            binding="#{backing_employees.loadCache}"
+                            id="loadCache"
+                            actionListener="#{backing_employees.loadCache}"/>
+          <af:commandButton text="See all"
+                            binding="#{backing_employees.seeAll}"
+                            id="seeAll" disabled="true"
+                            actionListener="#{backing_employees.seeAll}"/>
+          <af:commandButton text="Search"
+                            binding="#{backing_employees.search}"
+                            id="search" disabled="true"
+                            actionListener="#{backing_employees.search}" />
+          <af:commandButton text="Raise Salary"
+                            binding="#{backing_employees.salaryRaiser}"
+                            id="salaryRaiser" disabled="true"
+                            actionListener="#{backing_employees.raiseSalary}"/>
+          <af:commandButton text="Lower Salary"
+                            binding="#{backing_employees.salaryDecreaser}"
+                            id="salaryDecreaser" disabled="true"
+                            actionListener="#{backing_employees.lowerSalary}"/>
+
+          <af:table var="row"  emptyText="No items were found"  value="#{backing_employees.employees}" binding="#{backing_employees.resultTable}" id="resultTable">
+            <af:column sortable="true"   formatType="number" headerText="Employee Id">
+              <af:outputText value="#{row.employeeId}"/>
+            </af:column>
+            <af:column sortable="true" formatType="text" headerText="First name" >
+              <af:outputText value="#{row.firstName}" />
+            </af:column>
+            <af:column sortable="true" formatType="text" headerText="Last name">
+              <af:outputText value="#{row.lastName}"/>
+            </af:column>
+            <af:column sortable="true"  formatType="text" headerText="Email">
+              <af:outputText value="#{row.email}"/>
+            </af:column>
+            <af:column sortable="true" formatType="text" headerText="Job">
+              <af:outputText value="#{row.jobId}"/>
+            </af:column>
+            <af:column sortable="true" formatType="number" headerText="Salary">
+              <af:outputText value="#{row.salary}">
+                <af:convertNumber currencySymbol="e" maxIntegerDigits="8" />
+              </af:outputText>
+            </af:column>
+
+          </af:table>
+
+        </h:form>
+      </afh:body>
+    </afh:html>
+  </f:view>
+  <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_employees-->
+</jsp:root>

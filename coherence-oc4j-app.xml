@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd" default-data-source="jdbc/hrDS">
+    <ejb-module path="file:/C:/projecs/workspace/12.2.1.0.0/coherence/web/public_html/WEB-INF/classes/" id="coherence_web_0"/>
+    <web-module id="coherence-web-webapp" path="file:/D:/projecten/workspace/10.1.3.3/coherence/web/public_html/"/>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\ojsp.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\jsp\lib\taglib\ojsputil.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\oc4j-internal.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\servlet.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\ejb30.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\toplink\jlib\toplink-essentials.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\activation.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\ejb.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\jms.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\jta.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\j2ee\home\lib\mail.jar">jdev-generated</library>
+    <library path="C:\oracle\coherence\lib\coherence.jar">jdev-generated</library>
+    <library path="C:\oracle\coherence\lib\tangosol.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jsf-ri\jsf-api.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jsf-ri\jsf-impl.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jakarta-taglibs\commons-beanutils-1.6.1\commons-beanutils.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jakarta-taglibs\commons-digester-1.5\commons-digester.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jakarta-taglibs\commons-logging-1.0.3\commons-logging-api.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jakarta-taglibs\commons-logging-1.0.3\commons-logging.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jakarta-taglibs\commons-collections-2.1\commons-collections.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jakarta-taglibs\jstl-1.1\lib\jstl.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jlib\adf-faces-impl.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\jlib\adf-faces-api.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\BC4J\lib\adfshare.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\adfp\lib\custComps.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\adfp\lib\portlet-client-mds.jar">jdev-generated</library>
+    <library path="C:\oracle\jdevstudio122100\adfp\lib\oracle.extapp.runtime.jar">jdev-generated</library>
+    <log>
+        <file path="coherence-oc4j-app.log"/>
+    </log>
+    <jazn provider="XML" location="coherence-jazn-data.xml" default-realm="jazn.com"/>
+    <data-sources path="coherence-data-sources.xml"/>
+</orion-application>
