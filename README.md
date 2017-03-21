@@ -8,8 +8,8 @@ Oracle Coherence is the industry leading in-memory data grid solution that enabl
 
 Oracle Coherence is also a distributed data grid solution for clustered applications and application servers. It is a very easy to handle. It does everything automatically like backing up the cache on different nodes, distributing the load and recovering from cache servers or adding new coherence servers to the cluster.
 
-More information in [Oracle Coherence]
-
+More information:
+- [Java Coherence](https://coherence.java.net/)
 - [Oracle Coherence](http://www.oracle.com/technetwork/middleware/coherence/documentation/index.html)
 - [Oracle Coherence First Application](https://docs.oracle.com/cd/E15357_01/coh.360/e15723/gs_example.htm#COHDG5039)
 
